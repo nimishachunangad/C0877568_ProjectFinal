@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--This website is created by Nimisha Chunangadu Kunnath on 11th November 2022-->
+<!--This website is modified by Nimisha Chunangadu Kunnath on 26th November 2022-->
+
+<html lang="en">
+
+<head>
+  <title>About Us</title>
+  <style>
+    /* toggle */
+    section aside .toggle-content {
+      display: none;
+    }
+
+    section aside .toggle-header {
+      cursor: pointer;
+    }
+
+    section aside .toggle-header.active {
+      font-weight: bold;
+    }
+
+    section aside .toggle-header:not(.active) {
+      font-weight: normal;
+    }
+
+    /* read mode color transition */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.readmode {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/about.css" />
+</head>
+
+<body class="readmode">
+  <button onclick="toggleReadMode()">Toggle Read Mode</button>
+
+  <div id="container">
+    <!--The header is the area for the name of the website and its logo-->
+    <header>
+      <div class="header">
+        <a href="index.html"><img src="images/bowl_logo_test.png" alt="Forward fitness Club Logo" /></a>
+        <h1>Pick & Mix Ltd<h1>
+      </div>
+    </header>
+
+    <!--The nav area is where the links are available to navigate to the different pages of the website-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> &nbsp;&nbsp; </li>
+        <li><a href="about.html">About Us</a> &nbsp;&nbsp; </li>
+        <li><a href="team.html">Our Team</a> &nbsp;&nbsp;</li>
+        <li><a href="specials.html">Specials</a> &nbsp;&nbsp; </li>
+        <li><a href="training.html">Training</a> &nbsp;&nbsp;</li>
+        <li><a href="media.html">Media</a> &nbsp;&nbsp;</li>
+        <li><a href="contact.html">Contact Us</a> &nbsp;&nbsp;</li>
+        <li class="dropDown"><button class="menu">Reports</button><br>
+          <div class="menu-hidden">
+            <a href="http://185.113.4.41:7251/WEB1V.html">Products</a><br>
+            <a href="http://185.113.4.41:7251/WEB2V.html">Customer Orders</a><br>
+            <a href="http://185.113.4.41:7251/WEB3V.html">Customer Order Totals</a><br>
+            <a href="http://185.113.4.41:7251/WEB4V.html">Total Product Inventory</a><br>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!--The main area is the body for a particular page, in this instance it is for the home page-->
+    <main>
+      <section>
+        <aside>
+          <h1 class="toggle-header">Our Story</h1>
+          <div class="toggle-content">
+            <p>Pick and Mix Ltd, often shortened to Pick & Mix, is an American retail company specializing in kitchen
+              mixing bowls. Headquartered in Mooresville, North Carolina, the company operates a chain of retail
+              stores
+              in
+              the United States and Canada.
+            <p>On June 27, 2019, Pick & Mix announced the construction of a $153 million, 23-story tower in
+              Charlotte's
+              fast-growing South End neighborhood, which will be completed by 2020 and eventually house 2000
+              employees,
+              400 of which will move from the headquarters. The new tower will house a "global technology hub" for
+              Pick
+              &
+              Mix.The state of North Carolina is providing $54 million in incentives provided Pick & Mix meets certain
+              goals
+            </p>
+            <p>As of February 2021,
+              Pick & Mix and its related businesses operates 2,197 hardware stores in North America.</p>
+          </div>
+          <h1 class="toggle-header">Labour Relationships</h1>
+          <div class="toggle-content">
+            <p>In August 2022, the company announced that it was awarding $55 million in bonus income to front-line
+              workers, and that it was offering staff discounts
+              on common household and cleaning items in light of recent inflationary pressures</p>
+          </div>
+        </aside>
+      </section>
+      <section>
+        <h1>Make your mix uniquely yours. </h1>
+        <p>We dont just sell products!! </p>
+        <p>We sell items that become part of your life and play an integral role in your daily routine.</p>
+        <p>We know the care you put into choosing these items that transforms your kitchen into a homely one ,and we put
+          the same care into our product selection to ensure we offer you only the best.</p>
+        </p>
+        <h1>Here are the Great reasons,to shop with Us :</h1>
+        <ol>
+          <li>To find high qualified products</li>
+          <li>Experience efficient customer service</li>
+          <li>Connect suitable guide to all your bowl needs</li>
+          <li>Value to money</li>
+          <li>Be a Pro.Member with fantastic previleges</li>
+          <li>Customise your design ideas</li>
+        </ol>
+        <p>
+          Organized departments of different Mixing Bowls allows you to choose the best match for your kitchen. Get
+          bowls in plastic, ceramic, glass, copper, wooden, steel, silicone, Porcelain or stoneware and prepare your
+          delicious meals with accurate mixing.
+        </p>
+        <p>
+          Be choosy to mix up your enchantment with color and features. Our expertise designers are here, to customize
+          your bowl ideas within two weeks.
+        </p>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/plastic-modified.png" alt="plastic" class="equip" width="400px" />
+            <div>Used For: Mixing, storing food, serving bowl<br><br>
+              Pros: Lightweight,
+              Dishwasher safe,
+              Microwave safe,
+              Freezer safe
+              Cheap</div>
+            <h2>Plastic</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/ceramic1-modified.png" alt="Ceramic" class="equip" width="400px" />
+            <div>Used For: Serving bowls, decorative bowls, light mixing<br><br>
+              Pros: Microwave safe,
+              Dishwasher safe,
+              Oven safe (sometimes),
+              Use as serving bowls</div>
+            <h2>Ceramic</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/glass1-modified.png" alt="glass" class="equip" width="400px" />
+            <div>Used For: Making salads, marinating, storing food, serving bowls, bain-marie (double boiler)<br><br>
+              Pros: Non-reactive,
+              Heatproof,
+              Microwave safe,
+              Dishwasher safe,
+              Oven safe,
+              Durable</div>
+            <h2>Glass</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/copper3-modified.png" alt="copper" class="equip" width="400px" />
+            <div>Used For: Mixing, storing food, serving bowl, bain-marie<br><br>
+              Pros: Lightweight,
+              Dishwasher safe,
+              Great for whipping egg whites
+              Durable</div>
+            <h2>Copper</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/wooden-modified.png" alt="wood" class="equip" width="400px" />
+            <div>Used For: serving bowl, salad bowl, fruit bowl, centerpeice<br><br>
+              Pros: Lightweight,
+              Durable</div>
+            <h2>Wooden</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/steel2-modified.png" alt="steel" class="equip" width="400px" />
+            <div>Used For: Bain-marie, making salads, marinating, making batter, whisking, storing food.<br><br>
+              Pros: Lightweight,
+              Dishwasher safe,
+              Multi-purpose
+              Durable</div>
+            <h2>Steel</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/silicone-modified.png" alt="silicone" class="equip" width="400px" />
+            <div>Used For: Mixing, storing food, serving bowls<br><br>
+              Pros: Lightweight,
+              Collapsible,
+              Dishwasher safe,
+              Microwave safe,
+              Oven safe,
+              Multifunctional</div>
+            <h2>Silicone</h2>
+          </div>
+        </article>
+        <article class="products">
+          <div class="content_img">
+            <img src="images/stone-modified.png" alt="stone" class="equip" width="400px" />
+            <div>Used For: Mixing, marinating, making batter, whisking, storing food.<br><br>
+              Pros: Nontoxic,
+              Dishwasher safe,
+              Multi-purpose,
+              Durable</div>
+            <h2>Stoneware</h2>
+          </div>
+        </article>
+      </section>
+
+      <div class="guarantee">
+        <article>
+          <aside>
+            <img src="images/guara.png" width="250px" />
+            <h1>High Qualified Products, Lowest Price Guarantee!</h1>
+            We're confident that our prices are amongst the very keenest out there,<br> however in the unlikely event
+            that you do find a genuine lower price our Price Beat ensures we’ll beat that price (not just match it) as
+            well as give you the
+            reassurance that comes from buying from us. We also guarantee to beat web prices, voucher codes and bundle
+            deals.
+            <br><strong>We don’t just claim to have the lowest prices – we guarantee it!<br>
+              Our Price Beat is even valid for 14 days after purchase. If you've seen a cheaper price elsewhere, let us
+              know, and we'll happily beat that price by up to £100!
+            </strong>
+          </aside>
+        </article>
+      </div>
+
+    </main>
+    <script>
+      const headers = document.querySelectorAll('.toggle-header');
+
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
+          const content = header.nextElementSibling;
+          header.classList.toggle('active');
+          content.classList.toggle('active');
+
+          if (content.classList.contains('active')) {
+            content.style.display = 'block';
+          } else {
+            content.style.display = 'none';
+          }
+        });
+      });
+      function toggleReadMode() {
+        var element = document.body;
+        element.classList.toggle("readmode");
+      }
+
+    </script>
+    <!--The footer is the area for the end credits for an website that is the copyright and the contact information -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      Nimisha Chunangadu Kunnath<br>
+      C0877568<br>
+      <a href="mailto:info@pickandmixltd.com">Requestinformation</a>
+    </footer>
+  </div>
+</body>
+
+</html>

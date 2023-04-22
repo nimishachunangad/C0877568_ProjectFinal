@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Mr",
+        "name": "Marvin Erric",
+        "position": "Chairman, President & Chief Executive Officer",
+        "bio": "With over 20 years of experience in the retail industry, Marvin Erric has led the company to record growth and profitability.",
+        "image": "images/ceo1-rem.png",
+        "alt": "Marvin"
+    },
+    {
+        "title": "Mr",
+        "name": "William P Garry",
+        "position": "Executive Vice President , Merchandising",
+        "bio": "William P Garry is responsible for all aspects of the company's merchandising strategy and execution.",
+        "image": "images/sen2-rem.png",
+        "alt": "William"
+    },
+    {
+        "title": "Ms",
+        "name": "Julia Janice",
+        "position": "Executive Vice President & Chief Financial Officer",
+        "bio": "Julia Janice oversees the company's finance and accounting functions.",
+        "image": "images/sen1-rem.png",
+        "alt": "Julia"
+    },
+    {
+        "title": "Mr",
+        "name": "Ronaldo G. Bill",
+        "position": "Executive Vice President, Supply Chain",
+        "bio": "Ronaldo G. Bill is responsible for the company's global supply chain operations.",
+        "image": "images/sena-rem.png",
+        "alt": "Ronaldo"
+    },
+    {
+        "title": "Mr",
+        "name": "John M Smith",
+        "position": "Executive Vice President , Human Resources",
+        "bio": "John M Smith leads the company's human resources organization, with a focus on attracting and retaining top talent.",
+        "image": "images/sen6-rem.png",
+        "alt": "John"
+    },
+    {
+        "title": "Ms",
+        "name": "Sydney Sonia",
+        "position": "Executive Vice President ,Stores",
+        "bio": "Sydney Sonia is responsible for all aspects of the company's store operations.",
+        "image": "images/sen3-rem.png",
+        "alt": "Sydney"
+    }
+]

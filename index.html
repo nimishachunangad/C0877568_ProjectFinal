@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--This website is created by Nimisha Chunangadu Kunnath on 11th November 2022-->
+<!--This website is modified by Nimisha Chunangadu Kunnath on 29th November 2022-->
+<html lang="en">
+
+<head>
+  <title>Pick & Mix Ltd</title>
+  <style>
+    /* read mode color transition */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.readmode {
+      background-color: black;
+      color: white;
+    }
+
+    #results {
+      overflow: auto;
+    }
+
+    .photo {
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .photo p {
+      margin-top: 5px;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="readmode">
+  <button onclick="toggleReadMode()">Toggle Read Mode</button>
+
+  <!-- div with id value container -->
+  <div id="container">
+    <!--The header is the area for the name of the website and its logo-->
+    <header>
+      <div class="header">
+        <a href="index.html"><img src="images/bowl_logo_test.png" alt="Forward fitness Club Logo" /></a>
+        <h1>Pick & Mix Ltd<h1>
+      </div>
+    </header>
+
+    <!--The nav area is where the links are available to navigate to the different pages of the website-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> &nbsp;&nbsp; </li>
+        <li><a href="about.html">About Us</a> &nbsp;&nbsp; </li>
+        <li><a href="team.html">Our Team</a> &nbsp;&nbsp;</li>
+        <li><a href="specials.html">Specials</a> &nbsp;&nbsp; </li>
+        <li><a href="training.html">Training</a> &nbsp;&nbsp;</li>
+        <li><a href="media.html">Media</a> &nbsp;&nbsp;</li>
+        <li><a href="contact.html">Contact Us</a> &nbsp;&nbsp;</li>
+        <li class="dropDown"><button class="menu">Reports</button><br>
+          <div class="menu-hidden">
+            <a href="http://185.113.4.41:7251/WEB1V.html">Products</a><br>
+            <a href="http://185.113.4.41:7251/WEB2V.html">Customer Orders</a><br>
+            <a href="http://185.113.4.41:7251/WEB3V.html">Customer Order Totals</a><br>
+            <a href="http://185.113.4.41:7251/WEB4V.html">Total Product Inventory</a><br>
+          </div>
+        </li>
+      </ul>
+
+
+    </nav>
+
+    <div id="banner" class="desktop">
+      <img src="images/bowl_home.jpg" alt="home banner image">
+    </div>
+
+    <!--The main area is the body for a particular page, in this instance it is for the home page-->
+    <main>
+      <div class="mobile">
+        <p>Welcome to Pick & Mix Ltd </p>
+        <p>Make your Mix uniquely yours.</p>
+        <p>Find high qualified products, efficient customer service and suitable guide to all your bowl needs at
+          Pick & Mix Ltd. </p>
+      </div>
+      <div class="desktop">
+        <p>You Deserve The Best , Come Shop Soon !</p>
+        <!--
+             <audio autoplay controls>
+            <source src="media/ffc_aud.mp3" type="audio/mp3">
+            <source src="media/ffc_aud.ogg" type="audio/ogg">
+            <source src=" media/ffc_aud.wav" type="audio/wav">
+            <p>Your browser does not support the audio tag.</p>
+          </audio>
+ -->
+        <!--
+        <div class="video">
+        <video autoplay controls>
+          <source src="media/ffc_vid.mp4" type="video/mp4">
+          <source src="media/ffc_vid.webm" type="video/webm">
+          <p>Your browser does not support the video tag.</p>
+      </div>
+      -->
+      </div>
+      <form>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" placeholder="pickNmix_ltd_">
+        <button type="submit">Search</button>
+      </form>
+      <div id="results"></div>
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $("form").submit(function (event) {
+        event.preventDefault();
+        var searchTerm = $("#search").val();
+        var flickrAPI = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=3f6894d18e38420e6952634257be5901&format=json&nojsoncallback=1&text=" + searchTerm;
+        $.getJSON(flickrAPI, function (data) {
+          var photos = data.photos.photo;
+          $.each(photos, function (index, photo) {
+            var farmID = photo.farm;
+            var serverID = photo.server;
+            var photoID = photo.id;
+            var secret = photo.secret;
+            var photoURL = "https://farm" + farmID + ".staticflickr.com/" + serverID + "/" + photoID + "_" + secret + "_m.jpg";
+            var image = $("<img>").attr("src", photoURL);
+            var desc = photo.description;
+            var description = $("<p>").text(desc);
+            var photoDiv = $("<div>").addClass("photo");
+            photoDiv.append(image);
+            photoDiv.append(description);
+            $("#results").append(photoDiv);
+          });
+        });
+      });
+    </script>
+    <script>
+      function toggleReadMode() {
+        var element = document.body;
+        element.classList.toggle("readmode");
+      }
+
+    </script>
+
+    <!--The footer is the area for the end credits for an website that is the copyright and the contact information -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      Nimisha Chunangadu Kunnath<br>
+      C0877568<br>
+      <a href="mailto:info@pickandmixltd.com">Requestinformation</a>
+    </footer>
+  </div>
+</body>
+
+</html>

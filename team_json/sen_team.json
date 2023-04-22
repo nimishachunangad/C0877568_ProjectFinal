@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Ms",
+        "name": "Natalie Ali",
+        "position": "Division President, North Division",
+        "bio": "Natalie Ali has over 15 years of experience in the retail industry and has led the North Division to new heights.",
+        "image": "images/ladd1-rem.png",
+        "alt": "Natalie Ali"
+    },
+    {
+        "title": "Mr",
+        "name": "Toms Stewart",
+        "position": "Senior Vice President, General Merchandising Manager",
+        "bio": "Toms Stewart has over 10 years of experience in the merchandising industry and has led the company's merchandising efforts to great success.",
+        "image": "images/senn3-rem.png",
+        "alt": "Toms Stewart"
+    },
+    {
+        "title": "Mr",
+        "name": "Jacob John",
+        "position": "Senior Vice President, Retail Finance",
+        "bio": "Jacob John has over 12 years of experience in finance and accounting and has been instrumental in the company's financial success.",
+        "image": "images/senn4-rem.png",
+        "alt": "Jacob John"
+    },
+    {
+        "title": "Mr",
+        "name": "Aaron Smith",
+        "position": "Senior Vice President, Supply Chain Operation Support",
+        "bio": "Aaron Smith has over 15 years of experience in supply chain management and has been a driving force behind the company's operational efficiency.",
+        "image": "images/ceo-rem.png",
+        "alt": "Aaron Smith"
+    },
+    {
+        "title": "Mr",
+        "name": "Brandon Waron",
+        "position": "Senior Vice President, Pro Services and Online",
+        "bio": "Brandon Waron has over 10 years of experience in e-commerce and has been instrumental in the growth of the company's online sales.",
+        "image": "images/mano-rem.png",
+        "alt": "Brandon Waron"
+    },
+    {
+        "title": "Ms",
+        "name": "Bree Rose",
+        "position": "Senior Vice President, Technology E-commerce Marketing and Merchandising",
+        "bio": "Bree Rose has over 12 years of experience in marketing and technology and has been instrumental in the company's digital transformation.",
+        "image": "images/senb-rem.png",
+        "alt": "Bree Rose"
+    }
+]

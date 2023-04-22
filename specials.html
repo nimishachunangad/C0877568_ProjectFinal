@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--This website is created by Nimisha Chunangadu Kunnath on 11th November 2022-->
+<!--This website is modified by Nimisha Chunangadu Kunnath on 29th November 2022-->
+<html lang="en">
+
+<head>
+  <title>Specials</title>
+  <style>
+    #slideshow {
+      margin: 0 auto;
+      width: 600px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    #slideshow img {
+      position: absolute;
+      top: -10;
+      left: 0;
+      right: 0;
+      bottom: 2;
+      margin: auto;
+      max-width: 70%;
+      max-height: 70%;
+    }
+    /* read mode color transition */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.readmode {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/specials.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="readmode">
+  <button onclick="toggleReadMode()">Toggle Read Mode</button>
+
+  <!-- div with id value container -->
+  <div id="container">
+    <!--The header is the area for the name of the website and its logo-->
+    <header>
+      <div class="header">
+        <a href="index.html"><img src="images/bowl_logo_test.png" alt="Forward fitness Club Logo" /></a>
+        <h1>Pick & Mix Ltd<h1>
+      </div>
+    </header>
+
+    <!--The nav area is where the links are available to navigate to the different pages of the website-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> &nbsp;&nbsp; </li>
+        <li><a href="about.html">About Us</a> &nbsp;&nbsp; </li>
+        <li><a href="team.html">Our Team</a> &nbsp;&nbsp;</li>
+        <li><a href="specials.html">Specials</a> &nbsp;&nbsp; </li>
+        <li><a href="training.html">Training</a> &nbsp;&nbsp;</li>
+        <li><a href="media.html">Media</a> &nbsp;&nbsp;</li>
+        <li><a href="contact.html">Contact Us</a> &nbsp;&nbsp;</li>
+        <li class="dropDown"><button class="menu">Reports</button><br>
+          <div class="menu-hidden">
+            <a href="http://185.113.4.41:7251/WEB1V.html">Products</a><br>
+            <a href="http://185.113.4.41:7251/WEB2V.html">Customer Orders</a><br>
+            <a href="http://185.113.4.41:7251/WEB3V.html">Customer Order Totals</a><br>
+            <a href="http://185.113.4.41:7251/WEB4V.html">Total Product Inventory</a><br>
+          </div>
+        </li>
+      </ul>
+
+
+    </nav>
+
+    <div id="banner" class="desktop">
+      <img src="images/pro1.jfif" alt="training banner image">
+    </div>
+
+    <!--The main area is the body for a particular page, in this instance it is for the home page-->
+    <main>
+      <section>
+        <h1>Product Highlights Of the Week</h1>
+        <p>Find a chance to explore our expertised deigns on wooden collections.
+          <br>Check out for the very best in unique or custom way.<br>
+          We are showcasing you the latest collection of wooden pieces , which includes segmented,
+          turned,decorated,acacia and hand painted and so on..
+        </p>
+        <div id="slideshow"></div>
+        <img src="images/wood_pro1.png" alt="wood" title="Salad Tongs" width="90px" height="90px" />
+        <img src="images/wood_pro2.jfif" alt="wood" title="Segmented wooden" width="90px" height="90px" />
+        <img src="images/wood_pro3.jpg" alt="wood" title="Hand Painted Bowls" width="90px" height="90px" />
+        <img src="images/wood_pro5.jfif" alt="wood" title="Wood Turning Bowls" width="90px" height="90px" />
+        <img src="images/wood_pro6.jpg" alt="wood" title="Rainbow Wood Turning Bowls" width="90px" height="90px" />
+        <img src="images/wood_pro8.jfif" alt="wood" title="Acacia wood Bowls" width="90px" height="90px" />
+
+    </section>
+
+      <article>
+        <h1>Collect latest designs of mixing bowls </h1>
+        <p>Are you looking for a unique designs ? <br>
+          Come and collect soon</p>
+        <aside>
+          <p><strong>Offer ending soon !!!</strong><br>
+            <strong>Get 5% Dicount for your first orders</strong>
+          </p>
+        </aside>
+        <aside>
+          <p><strong>Are you not a Pro Member yet !!!</strong><br>
+            Don't lose your chance to benefit Pro Program exclusive offers..</p>
+          <details>
+            <summary><strong>Get 10% Discounts all time </strong></summary>
+          </details>
+          <details>
+            <summary>Instant Pro discounts</summary>
+          </details>
+          <details>
+            <summary>Buy in Bulk and Save</summary>
+          </details>
+          <details>
+            <summary>Priority Parking</summary>
+          </details>
+          <details>
+            <summary>Pro Program store service desk</summary>
+          </details>
+
+        </aside>
+      </article>
+
+
+
+    </main>
+    <script>
+      var slideIndex = 0;
+      var images = [
+        "images/wood_pro1.png",
+        "images/wood_pro2.jfif",
+        "images/wood_pro3.jpg",
+        "images/wood_pro5.jfif",
+        "images/wood_pro6.jpg",
+        "images/wood_pro8.jfif",
+      ];
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slide = document.getElementById("slideshow");
+        slide.innerHTML = "";
+        slideIndex++;
+        if (slideIndex > images.length) {
+          slideIndex = 1;
+        }
+        var img = document.createElement("img");
+        img.src = images[slideIndex - 1];
+        slide.appendChild(img);
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+      function toggleReadMode() {
+        var element = document.body;
+        element.classList.toggle("readmode");
+      }
+
+
+    </script>
+    <!--The footer is the area for the end credits for an website that is the copyright and the contact information -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      Nimisha Chunangadu Kunnath<br>
+      C0877568<br>
+      <a href="mailto:info@pickandmixltd.com">Requestinformation</a>
+    </footer>
+  </div>
+</body>
+
+</html>

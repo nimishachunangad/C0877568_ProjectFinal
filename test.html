@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--This website is created by Nimisha Chunangadu Kunnath on 11th November 2022-->
+<!--This website is modified by Nimisha Chunangadu Kunnath on 29th November 2022-->
+<html lang="en">
+
+<head>
+  <title>Our Team</title>
+  <style>
+    /* read mode color transition */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.readmode {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/team.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="readmode">
+  <button onclick="toggleReadMode()">Toggle Read Mode</button>
+
+  <!-- div with id value container -->
+  <div id="container">
+    <!--The header is the area for the name of the website and its logo-->
+    <header>
+      <div class="header">
+        <a href="index.html"><img src="images/bowl_logo_test.png" alt="Forward fitness Club Logo" /></a>
+        <h1>Pick & Mix Ltd<h1>
+      </div>
+    </header>
+
+    <!--The nav area is where the links are available to navigate to the different pages of the website-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> &nbsp;&nbsp; </li>
+        <li><a href="about.html">About Us</a> &nbsp;&nbsp; </li>
+        <li><a href="team.html">Our Team</a> &nbsp;&nbsp;</li>
+        <li><a href="specials.html">Specials</a> &nbsp;&nbsp; </li>
+        <li><a href="training.html">Training</a> &nbsp;&nbsp;</li>
+        <li><a href="media.html">Media</a> &nbsp;&nbsp;</li>
+        <li><a href="contact.html">Contact Us</a> &nbsp;&nbsp;</li>
+        <li class="dropDown"><button class="menu">Reports</button><br>
+          <div class="menu-hidden">
+            <a href="http://185.113.4.41:7251/WEB1V.html">Products</a><br>
+            <a href="http://185.113.4.41:7251/WEB2V.html">Customer Orders</a><br>
+            <a href="http://185.113.4.41:7251/WEB3V.html">Customer Order Totals</a><br>
+            <a href="http://185.113.4.41:7251/WEB4V.html">Total Product Inventory</a><br>
+          </div>
+        </li>
+      </ul>
+
+
+    </nav>
+
+    <div id="banner" class="desktop">
+      <img src="images/team.png" alt="home banner image">
+    </div>
+
+    <!--The main area is the body for a particular page, in this instance it is for the home page-->
+    <main>
+
+
+      <h1>Led by Chairman of the Board, President and CEO
+        Marvin Erric, this team works for our associates, customers and communities.</h1>
+      <p><i><q>In 2021, we grew our market share across DIY and Pro through our Total Kitchen strategy,
+            which is focused on providing our customers with the products and services they need for every
+            project in the kitchen. This was an important step in our ongoing evolution toward becoming a world-class,
+            customer-centric, omnichannel retailer.</q>
+
+          - Marvin R. Erric, Chairman & Chief Executive Officer</i></p>
+
+
+      <article>
+        <h1>Executive Leadership</h1>
+        <div id="exec">
+
+        </div>
+
+      </article>
+
+
+
+      <article>
+        <h1>Senior Leadership</h1>
+        <div id="sen">
+
+        </div>
+
+      </article>
+
+
+
+    </main>
+    <script>
+      function toggleReadMode() {
+        var element = document.body;
+        element.classList.toggle("readmode");
+      }
+    </script>
+    <script>
+
+      //Enable logging
+      var loggingEnabled = true;
+
+      // Log function
+      function log(message) {
+        if (loggingEnabled) {
+          console.log(message);
+        }
+      }
+
+
+      $(document).ready(function () {
+        log("Document ready."); // Log that the document is ready
+        // Fetch the JSON data
+        $.getJSON("exec_team.json", function (data) {
+          log("JSON data fetched."); // Log that the JSON data is fetched
+          // Loop through the data and generate HTML markup
+          $.each(data, function (index, exec) {
+            var html = '<section><figure>';
+            html += '<img src="' + exec.image + '" alt="' + exec.alt + '">';
+            html += '<figcaption>' + exec.title + " " + exec.name + '</figcaption>';
+            html += '<aside>' + exec.position + '</aside>';
+            html += '</figure></section>';
+            $('#exec').append(html);
+          });
+          log("HTML markup generated."); // Log that the HTML markup is generated
+        });
+      });
+    </script>
+
+    $(document).ready(function () {
+    // Fetch the JSON data
+    $.getJSON("sen_team.json", function (data) {
+    // Loop through the data and generate HTML markup
+    $.each(data, function (index, sen) {
+    var html = '<section>
+      <figure>';
+        html += '<img src="' + sen.image + '" alt="' + sen.alt + '">';
+        html += '<figcaption>' + sen.title + " " + sen.name + '</figcaption>';
+        html += '<aside>' + sen.position + '</aside>';
+        html += '</figure>
+    </section>';
+    $('#sen').append(html);
+    });
+    });
+    });
+
+
+
+
+    </script>
+
+
+    </script>
+
+    <!--The footer is the area for the end credits for an website that is the copyright and the contact information -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      Nimisha Chunangadu Kunnath<br>
+      C0877568<br>
+      <a href="mailto:info@pickandmixltd.com">Requestinformation</a>
+    </footer>
+  </div>
+</body>
+
+</html>

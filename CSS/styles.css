@@ -1,0 +1,454 @@
+/* This file is created by Nimisha Chunangadu Kunnath on 29th November 2022. */
+
+
+/* Style to create a fluid image */
+img {
+  max-width: 100%;
+}
+
+header {
+  text-align: center;
+}
+/* style for mobile layout */
+
+/* here the width of a div with id container is set along with its allignment */
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, powderblue,rgb(177, 142, 142));
+}
+
+/* styles for the navigation such as font and font-size along with margin and padding are defined here  */
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1 em;
+}
+
+/* this style specifies padding and margins for the unordered list */
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* style for nav li specifying the background color, removing bullets and margin and padding for li elelments in nav */
+nav ul li {
+  background-image: linear-gradient(to bottom, rgb(124, 154, 209), transparent);
+  border-radius: 2em;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+}
+
+nav li a {
+  color: #2f4f4f;
+  text-decoration: none;
+}
+
+/* style rules for mobile class */
+.mobile {
+  display: inline;
+}
+
+/* style rules for desktop class */
+.desktop {
+  display: none;
+}
+
+/* style rules for tablet class */
+.tablet {
+  display: none;
+}
+
+/* main block is styled with a particular font, font-size, margin and background, border radius and border top and bottom */
+main {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  margin-top: 0.5em;
+  padding: 1em;
+  opacity: 0.85;
+  background-image: linear-gradient(to bottom, transparent, rgb(209, 124, 124));
+  text-align: center;
+  color:rgb(44, 3, 3);
+
+
+}
+
+
+/* Style for anchor elements within the footer element */
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* here the font-size and the text allignment of footer is set  */
+footer {
+  font-size: 0.7em;
+  text-align: center;
+  text-size-adjust: 10em;
+  margin-top: -0.1em;
+  color: black;
+  background-image: linear-gradient(to bottom, rgb(209, 124, 124),black);
+
+}
+
+.dropDown{
+  padding-top: 6px;
+}
+
+.menu-hidden{
+ display: none;
+ padding-top: 5px;
+ margin-bottom: -10px;
+}
+
+nav .menu{
+
+ background-image: linear-gradient(to bottom, rgb(124, 154, 209), transparent);
+ border-radius: 2em;
+ border: none;
+ list-style-type: none;
+ margin-bottom: 0.3em;
+
+ margin-left: 0;
+ margin-right: 0;
+ padding: 0;
+ width: 7em;
+ height:1.5em;
+ 
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 1em;
+ text-align: center;
+ margin-top: 0 em;
+ color:black;
+text-shadow: 0.01em 0.01em #2f4f4f;;
+}
+
+.menu:hover{
+ font-size: 18px;
+ font-weight: bolder;
+ font-style: normal;
+ 
+}
+
+.dropDown:hover .menu-hidden{
+  display: block;  
+  padding-bottom: 20px;
+  margin-bottom: -6px;
+
+  width: 90vw;
+  background-image: linear-gradient(to bottom,  rgb(124, 154, 209),transparent);
+  font-style: normal;
+  height: 15vh;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+} 
+
+.menu-hidden:hover a:hover{
+ 
+ font-size: 15px;
+ color: rgb(13, 3, 39);
+  position: relative;
+  
+}
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+@media screen and (min-width: 769px) {
+  #container {
+    width: 100%;
+    background-image: linear-gradient(to bottom, powderblue,rgb(209, 124, 124));
+
+  }
+  .dropDown{
+    padding-top: 6px;
+  }
+  
+  .menu-hidden{
+   display: none;
+   padding-top: 5px;
+   margin-bottom: -10px;
+  }
+  
+  nav .menu{
+  
+   background-image: linear-gradient(to bottom, rgb(124, 154, 209), transparent);
+   border-radius: 2em;
+   border: none;
+   list-style-type: none;
+   margin-bottom: 0.3em;
+  
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+   width: 7em;
+   height:1.5em;
+   
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 1em;
+   text-align: center;
+   margin-top: 0 em;
+   color:black;
+  text-shadow: 0.01em 0.01em rgb(73, 3, 3);;
+  }
+  
+  .menu:hover{
+   font-size: 18px;
+   font-weight: bolder;
+   font-style: normal;
+   
+  }
+  
+  .dropDown:hover .menu-hidden{
+    display: block;  
+    padding-bottom: 20px;
+    margin-bottom: -6px;
+    position: absolute;
+
+    width: 30vw;
+    background-image: linear-gradient(to bottom, black,transparent);
+    font-style: normal;
+    height: 10vh;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  } 
+  
+  .menu-hidden:hover a:hover{
+   
+   font-size: 15px;
+   color: whitesmoke;
+    position: relative;
+    
+  }
+
+  /* Style specifies a horizontal display for navigation links */
+  nav ul li {
+    display: inline;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 18%;
+    white-space: nowrap;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  /* Style for h1 element */
+  h1 {
+    text-align: center;
+  }
+
+  /* Style specifies clear and top margin properties for the main element */
+  main {
+    clear: left;
+    margin-top: -0.3em;
+    border-radius: 0;
+    overflow: auto;
+    text-align: center;
+    color:rgb(44, 3, 3);
+  }
+
+  /* Style specifies to hide the mobile class */
+  .mobile {
+    display: inline;
+  }
+
+  /* Style specifies to display the desktop class */
+  .desktop {
+    display: inline;
+  }
+
+  /* Style specifies to display the tablet class */
+  .tablet {
+    display: block;
+    margin-top: -3em;
+    margin-bottom: -1em;
+  }
+
+  
+  
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px. */
+@media only screen and (min-width: 1026px) {
+
+  /* Style specifies a width for container */
+  #container {
+    width: 100%;
+    background-image: linear-gradient(to bottom, powderblue,rgb(209, 124, 124));
+
+  }
+
+  h5 {
+    float: left;
+    text-size-adjust: 100em;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .header h1 {
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    color: rgb(78, 55, 55);
+    font-size: 700%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0.05em 0.05em powderblue;
+  }
+
+  /* Style for navigation list items specifies a border radius, border, margin, width, and padding */
+  nav ul li {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 10%;
+    background-color: powderblue;
+
+  }
+
+  /* Style for navigation links specifies display and padding */
+  nav li a {
+    display: inline-block;
+    padding: 0.7em;
+    text-shadow: 0.01em 0.01em red;
+    color: #2f4f4f;
+    text-decoration: none;
+  }
+
+  /* Style to left align header */
+
+  header {
+    text-align: right;
+
+  }
+
+  /* Style for nav specifies a float, margin, and width*/
+  nav {
+    float: right;
+    margin-top: -3em;
+    margin-left: 3em;
+    margin-bottom: 0em;
+    width: 100%;
+  }
+
+  /* Style specifies border, shadow, margin, and padding for main element */
+  main {
+    background-image: linear-gradient(to bottom, transparent, rgb(209, 124, 124));
+    text-align: center;
+    color:rgb(44, 3, 3);
+  }
+
+  /* Style specifies left and right padding for paragraph elements within the main element */
+  main p {
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+  }
+
+  /* Style applies color to h1 element */
+
+  h1 {
+    color: #ffffff;
+  }
+
+  /* Style specifies a background color, margin, and padding for footer element */
+  footer {
+    background-image: linear-gradient(to bottom, rgb(209, 124, 124),black);
+    margin-top: -0.1em;
+    padding: 2em;
+    font-size:  1em;
+
+  }
+
+  /* Style rules for pseudo-classes */
+
+  nav li a:link {
+    color: #226161;
+  }
+
+  nav li a:visited {
+    color: black;
+  }
+
+  nav li a:hover {
+    color: blue;
+  }
+
+  /* style for main h2 element  */
+  main h2 {
+    color: #FFFFFF;
+  }
+
+  .dropDown{
+    padding-top: 6px;
+ }
+
+.menu-hidden{
+   display: none;
+   padding-top: 5px;
+   margin-bottom: -10px;
+}
+
+nav .menu{
+
+   background-image: linear-gradient(to bottom, rgb(124, 154, 209), powderblue);
+   border-radius: 2em;
+   border: none;
+   list-style-type: none;
+   margin-bottom: 0.3em;
+
+   margin-left: 0;
+   margin-right: 0;
+   padding: 0;
+   width: 7em;
+   height:1.5em;
+   
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 1.25em;
+   text-align: center;
+   margin-top: 0 em;
+   color:black;
+  text-shadow: 0.01em 0.01em red;
+}
+
+.menu:hover{
+   font-size: 18px;
+   font-weight: bolder;
+   font-style: normal;
+   
+ }
+
+ .dropDown:hover .menu-hidden{
+    display: block;  
+    padding-bottom: 20px;
+    margin-bottom: -6px;
+    position: absolute;
+    width: 15vw;
+    background-image: linear-gradient(to bottom,  transparent,rgb(124, 154, 209));
+    font-style: normal;
+    height: 20vh;
+    border-radius: 10px;
+    text-align: left;
+ } 
+
+ .menu-hidden:hover a:hover{
+   
+   font-size: 15px;
+   color: rgb(13, 3, 39);
+    position: relative;
+    
+ }
+
+
+}

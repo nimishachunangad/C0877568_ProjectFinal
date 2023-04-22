@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--This website is created by Nimisha Chunangadu Kunnath on 11th November 2022-->
+<html lang="en">
+
+<head>
+  <title>Contact Us</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .error {
+      color: red;
+      font-style: italic;
+    }
+
+    /* read mode color transition */
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    body.readmode {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/contact.css" />
+</head>
+
+<body class="readmode">
+  <button onclick="toggleReadMode()">Toggle Read Mode</button>
+
+  <!--The header is the area for the name of the website and its logo-->
+  <div id="container">
+    <header>
+      <div class="header">
+        <a href="index.html"><img src="images/bowl_logo_test.png" alt="Forward fitness Club Logo" /></a>
+        <h1>Pick & Mix Ltd</h1>
+      </div>
+    </header>
+    <!--The nav area is where the links are available to navigate to the different pages of the website-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> &nbsp;&nbsp; </li>
+        <li><a href="about.html">About Us</a> &nbsp;&nbsp; </li>
+        <li><a href="team.html">Our Team</a> &nbsp;&nbsp;</li>
+        <li><a href="specials.html">Specials</a> &nbsp;&nbsp; </li>
+        <li><a href="training.html">Training</a> &nbsp;&nbsp;</li>
+        <li><a href="media.html">Media</a> &nbsp;&nbsp;</li>
+        <li><a href="contact.html">Contact Us</a> &nbsp;&nbsp;</li>
+        <li class="dropDown"><button class="menu">Reports</button><br>
+          <div class="menu-hidden">
+            <a href="http://185.113.4.41:7251/WEB1V.html">Products</a><br>
+            <a href="http://185.113.4.41:7251/WEB2V.html">Customer Orders</a><br>
+            <a href="http://185.113.4.41:7251/WEB3V.html">Customer Order Totals</a><br>
+            <a href="http://185.113.4.41:7251/WEB4V.html">Total Product Inventory</a><br>
+          </div>
+        </li>
+      </ul>
+
+
+    </nav>
+
+
+    <!--The main area is the body for a particular page, in this instance it is for the home page-->
+    <main>
+      <!-- h2 tags are little smaller than h1 Tags -->
+      <h1>Ready to get started? </h1>
+      <article>
+        <h2>Customize your bowl ideas within 1 week. Connect our expertises now ! </h2>
+        <form id="custForm" method="post" action="#">
+          <!-- Start Form -->
+          <label for="fName">First Name:</label>
+          <input type="text" name="fName" id="fName">
+
+          <label for="lName">Last Name:</label>
+          <input type="text" name="lName" id="lName">
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone">
+          <p>I would like more information about:</p>
+          <ul>
+            <li><input type="checkbox" name="time" id="time" value="time" class="chkbx">Timeline</li>
+            <li><input type="checkbox" name="exp" id="exp" value="exp" class="chkbx">Expertise help</li>
+            <li><input type="checkbox" name="design" id="design" value="design" class="chkbx">Latest Design</li>
+            <li><input type="checkbox" name="fee" id="fee" value="fee" class="chkbx">Fee structures</li>
+            <li><input type="checkbox" name="ref" id="ref" value="ref" class="chkbx">References</li>
+
+          </ul>
+
+          <label for="reference">Referral Source:</label>
+          <select name="reference" id="reference">
+            <option value="ad">Advertisement</option>
+            <option value="friend">Friend</option>
+            <option value="google">Google</option>
+            <option value="social">Social Media</option>
+            <option value="other">Other</option>
+          </select>
+          <div id="other-referral" style="display:none;">
+            <label for="other">Other Referral:</label>
+            <input type="text" id="other" name="other" />
+          </div>
+
+          <label for="questions"> Questions?</label>
+          <textarea id="questions" name="questions" rows="3" cols="25"></textarea>
+          <input type="submit" id="submit" value="Submit" class="btn">
+          <input type="reset" id="reset" value="Reset Form" class="btn">
+
+        </form>
+      </article>
+      <article>
+        <form id="myForm" method="post" action="#">
+          <h3>Are you interested to know further? </h3>
+          <h3>Complete the form below to enquire your shopping needs !</h3>
+          <!-- Start Form -->
+          <label for="fName2">First Name:</label>
+          <input type="text" name="fName2" id="fName2">
+
+          <label for="lName2">Last Name:</label>
+          <input type="text" name="lName2" id="lName2">
+
+          <label for="email2">Email:</label>
+          <input type="email" name="email2" id="email2">
+
+          <label for="phone2">Phone: </label>
+          <input type="tel" id="phone2" name="phone2">
+          <p>I would like more information about:</p>
+          <ul>
+            <li><input type="checkbox" name="prod" id="prod" value="prod" class="chkbx">Products</li>
+            <li><input type="checkbox" name="service" id="service" value="service" class="chkbx">Services</li>
+            <li><input type="checkbox" name="fee" id="fee" value="fee" class="chkbx">Fee Structures</li>
+            <li><input type="checkbox" name="poc" id="poc" value="poc" class="chkbx">Point Of Contacs</li>
+            <li><input type="checkbox" name="pol" id="pol" value="pol" class="chkbx">Policies</li>
+            <li><input type="checkbox" name="mem" id="mem" value="mem" class="chkbx">Membership</li>
+          </ul>
+
+          <label for="questions2"> Questions?</label>
+          <textarea id="questions2" name="questions" rows="3" cols="25"></textarea>
+          <input type="submit" id="submit" value="Submit" class="btn">
+          <input type="reset" id="reset" value="Reset Form" class="btn">
+
+        </form>
+      </article>
+
+
+
+    </main>
+    <script>
+      // Reset button click event handler
+      $("#resetBtn").click(function () {
+        $("#myForm")[0].reset();
+        $(".error").remove();
+        $(".has-error").removeClass("has-error");
+        $(".success").remove(); // remove the success message
+      });
+
+
+      //toggle read mode
+      function toggleReadMode() {
+          var element = document.body;
+          element.classList.toggle("readmode");
+        }
+        
+      $(document).ready(function () {
+        $('#reference').change(function () {
+          if ($('#reference option:selected').text() === 'Other') {
+            $('#other-referral').show();
+          } else {
+            $('#other-referral').hide();
+          }
+        });
+        // Validation for the contact form
+        $("#custForm").submit(function (event) {
+          // Prevent form submission
+          event.preventDefault();
+
+          // Reset errors
+          $(".error").remove();
+          $(".has-error").removeClass("has-error");
+
+          // Get form values
+          var firstName = $("#fName").val().trim();
+          var lastName = $("#lName").val().trim();
+          var email = $("#email").val().trim();
+          var phone = $("#phone").val().trim();
+          var reference = $("#reference").val();
+
+          // Validate form values
+          if (firstName == "") {
+            $("#fName").after("<span class='error'>Please enter your first name</span>");
+            $("#fName").addClass("has-error");
+          }
+          if (lastName == "") {
+            $("#lName").after("<span class='error'>Please enter your last name</span>");
+            $("#lName").addClass("has-error");
+          }
+          if (email == "") {
+            $("#email").after("<span class='error'>Please enter your email</span>");
+            $("#email").addClass("has-error");
+          } else {
+            var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!pattern.test(email)) {
+              $("#email").after("<span class='error'>Please enter a valid email</span>");
+              $("#email").addClass("has-error");
+            }
+          }
+          if (phone == "") {
+            $("#phone").after("<span class='error'>Please enter your 10 digit phone number</span>");
+            $("#phone").addClass("has-error");
+          } else {
+            var pattern = /^\d{10}$/;
+            if (!pattern.test(phone)) {
+              $("#phone").after("<span class='error'>Please enter a valid phone number</span>");
+              $("#phone").addClass("has-error");
+            }
+          }
+          if (reference == "other" && $("#other").val().trim() == "") {
+            $("#other").after("<span class='error'>Please provide a referral source</span>");
+            $("#other").addClass("has-error");
+          }
+          // If no errors, submit the form
+          if ($(".error").length == 0) {
+            // Display success message
+            $("#custForm").append("<p class='success'>Form is submitted.</p>");
+
+            // Clear form values
+            $("#custForm")[0].reset();
+          }
+        });
+
+        $("#myForm").submit(function (event) {
+          // Prevent form submission
+          event.preventDefault();
+
+          // Reset errors
+          $(".error").remove();
+          $(".has-error").removeClass("has-error");
+
+          // Get form values
+          var firstName = $("#fName2").val().trim();
+          var lastName = $("#lName2").val().trim();
+          var email = $("#email2").val().trim();
+          var phone = $("#phone2").val().trim();
+
+          // Validate form values
+          if (firstName == "") {
+            $("#fName2").after("<span class='error'>Please enter your first name</span>");
+            $("#fName2").addClass("has-error");
+          }
+          if (lastName == "") {
+            $("#lName2").after("<span class='error'>Please enter your last name</span>");
+            $("#lName2").addClass("has-error");
+          }
+          if (email == "") {
+            $("#email2").after("<span class='error'>Please enter your email</span>");
+            $("#email2").addClass("has-error");
+          } else {
+            var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!pattern.test(email)) {
+              $("#email2").after("<span class='error'>Please enter a valid email</span>");
+              $("#email2").addClass("has-error");
+            }
+          }
+          if (phone == "") {
+            $("#phone2").after("<span class='error'>Please enter your 10 digit phone number</span>");
+            $("#phone2").addClass("has-error");
+          } else {
+            var pattern = /^\d{10}$/;
+            if (!pattern.test(phone)) {
+              $("#phone2").after("<span class='error'>Please enter a valid phone number</span>");
+              $("#phone2").addClass("has-error");
+            }
+          }
+          if (firstName == "") {
+            $("#questions2").after("<span class='error'>Please enter your quesions</span>");
+            $("#questions2").addClass("has-error");
+          }
+          // If no errors, submit the form
+          if ($(".error").length == 0) {
+            // Display success message
+            $("#myForm").append("<p class='success'>Form is submitted</p>");
+
+            // Clear form values
+            $("#myForm")[0].reset();
+          }
+        });
+
+      });
+
+
+    </script>
+
+    <!--The footer is the area for the end credits for an website that is the copyright and the contact information -->
+    <footer>
+      &copy; Copyright 2099. All Rights Reserved.<br>
+      Nimisha Chunangadu Kunnath<br>
+      C0877568<br>
+      <a href="mailto:info@pickandmixltd.com">Requestinformation</a>
+    </footer>
+  </div>
+</body>
+
+</html>
